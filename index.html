@@ -21,6 +21,7 @@
           <input 
           id="name"
           name="name"
+          type="text"
           placeholder="Enter Full Name">Name        
         </label>
       </div>
@@ -29,6 +30,7 @@
         <input 
         id="email"
         name="email"
+        type="email"
         placeholder="Enter E-Mail Address">E-Mail
       </label>
     </div>
@@ -36,40 +38,72 @@
       <label id="number-label">
         <input 
         id="number"
-        name="email"
-        placeholder="Enter E-Mail Address">E-Mail
+        name="languagenumber"
+        type="number"
+        min="0"
+        max="100"
+        placeholder="Enter 0 - 100"># Of coding languages you know
       </label>
     </div>
-  
+    <div class="label-input">
+      <p>What language do you think we should add to our curriculum next?</p>
+      <select id="dropdown" name="language" required>
+        <option disabled selected value>Select Language</option>
+        <option value="Ruby">Ruby</option>
+        <option value="C#">C#</option>
+        <option value="Java">Java</option>
+        <option value="Elm">Elm</option>
+        <option value="TypeScript">TypeScript</option>
+      
+      </select>
+    </div>
 
-  
+    <div class="label-input">
+      <p>How long have you been programming?</p>
+      <label>
+        <input name="years" value="0-1" type="radio" checked>0-1 year
+      </label>  
+      <label>
+        <input name="years" value="2-3" type="radio">2-3 years
+      </label>
+      <label>  
+        <input name="years" value="4-5" type="radio">4-5 years
+      </label>
+      <label>  
+        <input name="years" value="5+" type="radio">5+ years
+      </label>
 
-    </form>
+    </div>
+    <div class="label-input">
+      <p>How do you learn best? (Check all that apply)</p>
+      <label>
+        <input name="method" value="Videos" type="checkbox">Videos
+      </label>
+      <label>
+        <input name="method" value="Reading" type="checkbox">Reading
+      </label>
+      <label>
+        <input name="method" value="Lecture" type="checkbox">Class Lecture
+      </label>
+      <label>
+        <input name="method" value="Tutor" type="checkbox">1 on 1 Tutor
+      </label>
+      <label>
+        <input name="method" value="Interactive" type="checkbox">Interactive Tutorials
+      </label>
+    </div>
+    <div class="label-input">
+      <p>Any additional comments?</p>
+      <textarea placeholder="Enter comment here..." name="comment"></textarea>
+    </div>
+    <div class="label-input">
+      <button type="submit" id="submit">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
 
-
-
-
-
-  </div>
-
-
-
-
-  </div>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </html>
