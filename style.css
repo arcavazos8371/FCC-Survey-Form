@@ -3,8 +3,7 @@
     color:#ffffff;
 }
 .container {
-      
-    
+    font-family: monospace;
 }
 .header {
     color: #ffffff;
@@ -15,19 +14,22 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 50%;
+    padding: 50px;
        
   }
   
-  .header h1 {
+.header h1 {
     text-align: center;
   }
-  #title{
+#title{
+      font-size: 35px;
+    }
+#description {
+      text-align: center;
+      font-size: 20px;
       
   }
-  #description {
-      text-align: center;
-  }
-  #survey-form {
+#survey-form {
       border-radius: 5px;
       border-color: #3b3b4f;
       width: 50%;
@@ -35,4 +37,20 @@
       color: #ffffff;
       border-width: 10px;
       border-style:outset;
-       }
+    }
+    label {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+      .label-input {
+        margin: 0 auto 1.25rem auto;
+        padding: 0.25rem;
+      }
+      #number-label {
+          margin-top: 2rem;
+      }
+      input[type='number']{
+        width: 150px;
+    } 
